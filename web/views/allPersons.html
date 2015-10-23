@@ -1,0 +1,19 @@
+<h1>All Persons</h1>
+
+<div class="col-lg-8 col-md-8">
+    <h2>Persons</h2>
+    <table class="table col-lg-6 col-md-6">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="person in ctrl.persons">
+                <td>{{person.name}}</td>
+                <td><a href="#/details/{{person.id}}">{{person.id}}</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
